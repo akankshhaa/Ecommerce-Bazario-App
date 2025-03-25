@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-20 text-sm">
         <div className="flex flex-col justify-start">
           <img src={assets.logo} className="mb-2 w-32" alt="Logo" />
-          <p className="w-full md:w-2/3 text-gray-600 mt-2">
+          <p className="w-full md:w-2/3 text-gray-600 text-justify mt-2">
             Bazario Shop is a leading e-commerce platform that provides quality
             products across various categories including fashion, electronics, and home essentials. 
             We strive to offer the best prices and customer service in the industry.
@@ -55,7 +55,7 @@ const Footer = () => {
 
       <div>
         <hr/>
-        <p className="py-5 text-sm text-center">Copyright 2024@ akankshhaa - All Right Reserved.</p>
+        <p className="py-5 text-sm text-center">© 2025 akankshhaa - All Rights Reserved.</p>
       </div>
       
     </div>
