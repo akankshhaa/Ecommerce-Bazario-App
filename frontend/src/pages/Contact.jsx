@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const handleExploreJobsClick = () => {
-    toast.info("Currently not job openings");
+    toast.info("Currently not job opening");
   };
   return (
     <div>
@@ -31,10 +31,10 @@ const Contact = () => {
           <p className="text-gray-500">
             Tel: +91-98765 43210 <br /> Email:{" "}
             <a
-              href="mailto:support@bazarioshop.com"
+              href="mailto:connecttthere@gmail.com"
               className="text-blue-500 hover:underline"
             >
-              support@bazarioshop.com
+              connecttthere@gmail.com
             </a>
           </p>
 
