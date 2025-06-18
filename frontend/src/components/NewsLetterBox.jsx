@@ -1,10 +1,12 @@
 import React from 'react'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NewsLetterBox = () => {
 
     const onSubmitHandler = (event) =>{
         event.preventDefault();
-        alert("🚨 Oops! Currently offer is not available.");
+        toast.info("🚨 Oops! Currently offer is not available.");
     }
 
   return (

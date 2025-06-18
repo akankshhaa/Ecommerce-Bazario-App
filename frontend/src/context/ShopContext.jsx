@@ -10,11 +10,11 @@ const ShopContextProvider = (props) => {
   const currency = "₹";
   const delivery_fee = 25;
   const [search, setSearch] = useState("");
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch, setShowSearch] = useState(true);
   const [cartItems, setCartItems] = useState({});
   const navigate = useNavigate();
 
-  const addToCart = async (itemId, size) => {
+  const addToCart = (itemId, size) => {
     if (!size) {
       toast.error("Select Product Size");
       return;
@@ -65,7 +65,7 @@ const ShopContextProvider = (props) => {
             totalAmount += itemInfo.price * cartItems[items][item];
           }
         } catch (error) {
-          console.error("Error calculating cart amount:", error);
+          return `Error calculating cart amount: ${error.message}`;
         }
       }
     }

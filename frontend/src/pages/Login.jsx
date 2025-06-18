@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Login = () => {
   const [currentState, setCurrentState] = useState("Sign Up");
-  const onSubmitHandler = async (event) => {
+  const onSubmitHandler = (event) => {
     event.preventDefault();
   };
 

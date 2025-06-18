@@ -4,7 +4,12 @@ import Title from "../components/Title";
 
 const Orders = () => {
   const { products, currency } = useContext(ShopContext);
-
+  const today = new Date();
+  const formattedDate = today.toLocaleDateString("en-US", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
   return (
     <div className="border-t pt-16">
       <div className="text-2xl">
@@ -12,7 +17,7 @@ const Orders = () => {
       </div>
 
       <div>
-        {products.slice(1, 4).map((item, index) => (
+        {products.slice(1, 3).map((item, index) => (
           <div
             key={index}
             className="py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
@@ -27,10 +32,10 @@ const Orders = () => {
                     {item.price}
                   </p>
                   <p>Quantity: 1</p>
-                  <p>Size: M</p>
+                  <p>Size: {item.sizes[0]}</p>
                 </div>
                 <p className="mt-2">
-                  Date: <span className="text-gray-400">26, March, 2025</span>
+                  Date: <span className="text-gray-400">{formattedDate}</span>
                 </p>
               </div>
             </div>
